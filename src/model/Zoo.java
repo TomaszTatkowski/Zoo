@@ -11,7 +11,7 @@ public class Zoo {
 
     private String zooName;
 
-    private List<Animal> hostedAnimals = new ArrayList<>();
+    private List<Animal> animals = new ArrayList<>();
 
     public String getZooName() {
         return zooName;
@@ -20,8 +20,8 @@ public class Zoo {
     public void presentAnimals() {
         System.out.println("Zoo: " + getZooName());
         System.out.println("-----------ANIMALS-----------");
-        if (hostedAnimals.size() > 0) {
-            for (Animal animal : hostedAnimals) {
+        if (animals.size() > 0) {
+            for (Animal animal : animals) {
                 AnimalConcrete animalConcret = (AnimalConcrete) animal;
                 System.out.println("Type: " + animalConcret.getType());
                 System.out.println("Name: " + animalConcret.getName());
@@ -35,7 +35,7 @@ public class Zoo {
     }
 
     public void addAnimal(Animal animal) {
-        hostedAnimals.add(animal);
+        animals.add(animal);
     }
 
 }

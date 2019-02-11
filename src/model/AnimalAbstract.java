@@ -1,7 +1,7 @@
 package model;
 
 public abstract class AnimalAbstract implements Animal {
-    public AnimalAbstract(String type, String name, String sound) {
+    AnimalAbstract(String type, String name, String sound) {
         this.type = type;
         this.name = name;
         this.sound = sound;
