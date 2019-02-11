@@ -19,6 +19,7 @@ public class Zoo {
 
     public void presentAnimals() {
         System.out.println("Zoo: " + getZooName());
+        System.out.println("-----------ANIMALS-----------");
         if (hostedAnimals.size() > 0) {
             for (Animal animal : hostedAnimals) {
                 AnimalConcrete animalConcret = (AnimalConcrete) animal;
@@ -29,6 +30,8 @@ public class Zoo {
                 System.out.println();
             }
         }
+        else
+            System.out.println("There are nor animals in this zoo");
     }
 
     public void addAnimal(Animal animal) {
