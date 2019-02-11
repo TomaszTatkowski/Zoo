@@ -5,8 +5,8 @@ import java.util.List;
 
 public class Zoo {
 
-    public Zoo(String zooNamed) {
-        this.zooName = zooNamed;
+    public Zoo(String zooName) {
+        this.zooName = zooName;
     }
 
     private String zooName;
