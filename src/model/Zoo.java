@@ -22,11 +22,11 @@ public class Zoo {
         System.out.println("-----------ANIMALS-----------");
         if (animals.size() > 0) {
             for (Animal animal : animals) {
-                AnimalConcrete animalConcret = (AnimalConcrete) animal;
-                System.out.println("Type: " + animalConcret.getType());
-                System.out.println("Name: " + animalConcret.getName());
+                AnimalAbstract animalAbstract = (AnimalAbstract) animal;
+                System.out.println("Type: " + animalAbstract.getType());
+                System.out.println("Name: " + animalAbstract.getName());
                 animal.makeASound();
-                animalConcret.makeALeap();
+                animalAbstract.makeALeap();
                 System.out.println();
             }
         }
