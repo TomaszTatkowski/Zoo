@@ -31,7 +31,7 @@ public class Zoo {
             }
         }
         else
-            System.out.println("There are nor animals in this zoo");
+            System.out.println("There are not animals in this zoo");
     }
 
     public void addAnimal(Animal animal) {

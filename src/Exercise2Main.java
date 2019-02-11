@@ -28,6 +28,7 @@ public class Exercise2Main {
 	public static void main(String[] args) {
 		Zoo zooWarsaw = new Zoo("Warsaw");
 		Zoo zooLondon = new Zoo("London");
+		Zoo zooGlasgow = new Zoo("Glasgow");
 
 		Animal lion = new AnimalConcrete("Lion", "Simba", "Roar", 4);
 		Animal dog = new AnimalConcrete("Dog", "Azor", "Woof", 2);
@@ -40,5 +41,6 @@ public class Exercise2Main {
 
 		zooWarsaw.presentAnimals();
 		zooLondon.presentAnimals();
+		zooGlasgow.presentAnimals();
 	}
 }
